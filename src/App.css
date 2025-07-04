@@ -1,0 +1,318 @@
+/* === Base Styles === */
+.App {
+  min-height: 100vh;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* === Header === */
+.header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #00ffe1;
+}
+
+.name {
+  font-weight: bold;
+  color: white;
+}
+
+.header h2 {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* === Hero Typewriter Center === */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+}
+
+.intro {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00ffe1;
+  padding: 20px;
+}
+
+/* === Section Wrapper === */
+.section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 900px;
+  border-bottom: 1px solid #333;
+}
+
+.section h2 {
+  color: #00ffe1;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* === Resume Button === */
+.resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00ffe1;
+  color: #111;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.resume-btn:hover {
+  background-color: #00cccc;
+}
+
+/* === Projects Section === */
+/*.projects-section {
+  margin-top: 40px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+.project-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #00ffe1;
+  box-shadow: 0 0 12px rgba(0, 255, 225, 0.2);
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.03);
+}
+.project-card h3 {
+  color: #00ffe1;
+  margin-bottom: 8px;
+}
+.project-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+.project-card a {
+  color: #00ffe1;
+  text-decoration: none;
+  font-weight: 500;
+}
+.project-card a:hover {
+  color: #00cccc;
+}
+*/
+.project-grid-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #00ffe1;
+  box-shadow: 0 4px 15px rgba(0, 255, 225, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 255, 225, 0.3);
+}
+
+.project-box h3 {
+  color: #00ffe1;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.project-box p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-box a {
+  color: #00ffe1;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.project-box a:hover {
+  color: #00cccc;
+}
+
+/* Light Theme Support */
+.App.light .project-box {
+  background: #fff;
+  border-left: 4px solid #0077ff;
+  box-shadow: 0 4px 15px rgba(0, 119, 255, 0.1);
+}
+
+.App.light .project-box h3 {
+  color: #0077ff;
+}
+
+.App.light .project-box p {
+  color: #444;
+}
+
+.App.light .project-box a {
+  color: #0077ff;
+}
+.App.light .project-box a:hover {
+  color: #005ecb;
+}
+/* === Education Section === */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.edu-card {
+  background: #1a1a1a;
+  border-left: 4px solid #00ffe1;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 255, 225, 0.2);
+  transition: transform 0.3s ease;
+}
+.edu-card:hover {
+  transform: scale(1.03);
+}
+.edu-card h3 {
+  color: #00ffe1;
+  margin-bottom: 8px;
+}
+.edu-card span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* === Contact Section === */
+.contact-icons {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-icons li a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0, 255, 225, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-icons li a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 18px rgba(0, 255, 225, 0.5);
+}
+
+.contact-icons svg {
+  font-size: 28px;
+  color: #00ffe1;
+  transition: color 0.3s ease;
+}
+
+.contact-icons li a:hover svg {
+  color: #00cccc;
+}
+
+/* === Light Mode === */
+.App.light .contact-icons li a {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 12px rgba(0, 119, 255, 0.25);
+}
+
+.App.light .contact-icons svg {
+  color: #0077ff;
+}
+
+.App.light .contact-icons li a:hover svg {
+  color: #0055cc;
+}
+
+.App.light .contact-icons li a:hover {
+  box-shadow: 0 0 18px rgba(0, 119, 255, 0.5);
+}
+
+/* === Responsive Fixes === */
+@media (max-width: 600px) {
+  .intro {
+    font-size: 1.8rem;
+  }
+}
+
+/* === Theme Toggle Button === */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #00ffe1;
+  border: 2px solid #00ffe1;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+  transition: 0.3s ease;
+}
+.theme-toggle:hover {
+  background-color: #00ffe1;
+  color: #111;
+}
+
+/* === Light Theme === */
+.App.light {
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+.App.light .section,
+.App.light .project-list li,
+.App.light .edu-card {
+  background-color: #fff;
+  color: #111;
+  border-left: 4px solid #0077ff;
+  box-shadow: 0 0 10px rgba(0, 119, 255, 0.1);
+}
+
+.App.light .section h2,
+.App.light .resume-btn,
+.App.light .project-list a {
+  color: #0077ff;
+  background-color: #e0f0ff;
+}
+
+.App.light .resume-btn:hover {
+  background-color: #cce6ff;
+  color: #111;
+}

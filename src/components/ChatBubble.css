@@ -1,0 +1,20 @@
+.chat-bubble {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #00ffe1;
+  color: #000;
+  padding: 12px 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(0, 255, 225, 0.3);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.chat-bubble:hover {
+  background-color: #00cccc;
+  color: #fff;
+  transform: scale(1.05);
+}
